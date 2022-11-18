@@ -831,6 +831,10 @@ try {
     res.sendFile(filePath, { root: "../client/out/lobby/" });
   });
 
+  app.get("/hi", (req, res) => {
+    res.send("hi");
+  });
+
   app.post("/api/admin/login", (req, res) => {
     try {
       const { password } = req.body;
