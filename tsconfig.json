@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    // "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": false,
+    "lib": ["es6"],
+    "types": ["node", "express"],
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    }
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": ["**/*.ts", "../shared/test.ts"],
+  "exclude": ["node_modules"]
+}
